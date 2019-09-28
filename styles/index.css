@@ -1,4 +1,6 @@
 :root {
+    --white: #fff;
+    --dark-blue: rgb(26, 65, 92); 
     --blue: rgb(46, 120, 170);
     --main-font: 'Time New Roman', "Areal";
 }
@@ -12,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
+    height: 80px;
     background-color: var(--blue);
     background-image: url('/img/header_bg.jpg');
     background-repeat: no-repeat;
@@ -21,6 +23,57 @@ body {
 
 .headerLogo {
     margin-left: 10px;
+}
+
+.headerForm {
+    display: flex;
+    flex-flow: column;
+    max-width: 30%;
+}
+
+.headerFormRow {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.headerFormRow.modBlueBackground {
+    width: fit-content;
+    padding: 0 5px;
+    border-radius: 5px;
+    background-color: rgb(51, 147, 202);
+}
+
+.headerFormField,
+.headerFormButton {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.headerFormField {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.headerFormButton {
+    color: var(--white);
+    background-color: var(--dark-blue);
+    margin: 0 5px;
+}
+
+.headerFormLink {
+    color: var(--white);
+    margin: 5px 0;
+    transition: color 0.25s;
+}
+
+.headerFormLink:hover {
+    color: gold;
+}
+
+.headerFormLink:first-child {
+    margin-right: 20px;
 }
 
 @media (max-width: 800px) {
