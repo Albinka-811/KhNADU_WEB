@@ -1,0 +1,31 @@
+:root {
+    --blue: rgb(46, 120, 170);
+    --main-font: 'Time New Roman', "Areal";
+}
+ 
+body {
+    font-family: var(--main-font);
+}
+
+/* Селектор через class аттрибут */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: var(--blue);
+    background-image: url('/img/header_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.headerLogo {
+    margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+    
+    .headerLogo {
+        max-width: 25%;
+    }
+} 
