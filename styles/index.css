@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    height: 110px;
     background-color: var(--blue);
     background-image: url('/img/header_bg.jpg');
     background-repeat: no-repeat;
@@ -37,7 +37,10 @@ body {
 .headerForm {
     display: flex;
     flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
     max-width: 30%;
+    height: 100%;
 }
 
 .headerFormRow {
@@ -62,10 +65,12 @@ body {
 
 .headerFormField {
     width: 150px;
+    padding: 5px 0;
     margin-right: 10px;
 }
 
 .headerFormField::placeholder {
+    padding-left: 10px;
     /* Для редактирования заглушки в полях. */
 }
 
