@@ -6,7 +6,6 @@
     --white: #fff;
     --gray: gray;
     --black: #000;
-    --salad-green: rgb(69, 238, 17);
     --dark-blue: rgb(26, 65, 92); 
     --blue: rgb(46, 120, 170);
     --elephantBone: #e3dac9;
@@ -199,14 +198,27 @@ body {
     max-height: 180px; 
     height: 100%;
     border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.latestNews {
+    padding: 10px 0;
+}
+
+.latestNewsTitle{
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 600;
+    text-transform: uppercase;   
 }
 
 .newsReadButton {
     appearance: none;
     border: none;
-    border-radius: 10px;
+    border-radius: 2px;
     padding: 5px 20px;
-    background-color: var(--salad-green);
+    color: var(--white);
+    background: var(--blue-gradient);
 }
 
 .newsCreatedTime {
@@ -254,7 +266,47 @@ body {
     margin-right:25px;
 }
 
-/* Sidebar */
+
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(71, 71, 71);
+    padding: 10px 20px;
+    max-width: 70%;
+    margin: 0 auto;
+    border-radius: 2px;
+    color: var(--white);
+}
+
+.paginationJumpButton {
+    cursor: pointer;
+}
+
+.paginationPagesList {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.paginationPagesListItem {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.paginationPagesListItem.modActive {
+    cursor: auto;
+    border-radius: 3px;
+    background-color: var(--blue);
+}
+
+/* SIDEBAR */
 .sidebarHeader {
     height: 50px;
 }
@@ -283,17 +335,6 @@ body {
     margin-bottom: 15px;
     width: 100%;
     max-width: 400px;
-}
-
-.latestNews {
-    padding: 10px 0;
-}
-
-.latestNewsTitle{
-    font-size: 20px;
-    margin: 20px 0;
-    font-weight: 600;
-    text-transform: uppercase;   
 }
 
 .sidebarBlockTitle:hover {
@@ -344,5 +385,26 @@ body {
     .headerLogo {
         max-width: 25%;
     }
-} 
+}
+
+/* City announce */
+.cityAnnounceBody {
+    background-color: var(--white);
+}
+
+.cityAnnounceTitle,
+.cityAnnounceText {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.cityAnnounceTitle {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.cityAnnounceImg {
+    width: 100%;
+    height: auto;
+}
 
